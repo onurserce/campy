@@ -276,7 +276,7 @@ def CheckConfig(params, clargs):
 
 def CombineConfigAndClargs(clargs):
 	params = LoadConfig(clargs.config)
-	CheckConfig(params, clargs)
+	# CheckConfig(params, clargs)
 	for param, value in clargs.__dict__.items():
 		if value is not None:
 			params[param] = value
