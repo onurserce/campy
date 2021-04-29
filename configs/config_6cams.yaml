@@ -13,6 +13,10 @@ cameraMake: "basler"
 pixelFormatInput: "rgb24"
 pixelFormatOutput: "rgb0"
 
+# Camera settings (only for FLIR cameras)
+exposure: 20000
+gain: 0
+
 # Compression parameters
 ffmpegLogLevel: "quiet"   # "quiet", "warning", "info"
 gpuID: [0,0,0,1,1,1]      # -1 = CPU, GPU id for Nvidia multi-GPU, default is 0
